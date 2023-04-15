@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+  --very-dark-cyan: hsl(157, 35%, 19%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+
+.card {
+  display: flex;
+  width: 40rem;
+  height: 30rem;
+  background-color: var(--white);
+  border-radius: 1.25rem;
+}
+
+.leftCard {
+  width: 50%; 
+}
+
+.leftCard img {
+  width: 20rem;
+  height: 30rem;
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+}
+
+.mobile img {
+  display: none;
+}
+
+.rightCard {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.rightCard h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+  font-size: .8rem;
+}
+
+.rightCard h1 {
+  font-family: 'Fraunces', serif;
+}
+
+.rightCard p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  font-size: .92rem;
+  line-height: 1.3rem;
+}
+
+.rightCard div {
+  display: flex;
+}
+
+.rightCard .price {
+  font-family: 'Fraunces', serif;
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  justify-content: left;
+}
+
+.rightCard .oldPrice {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.rightCard button {
+  background-color: var(--dark-cyan);
+  border: transparent;
+  padding: .8rem;
+  border-radius: .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.rightCard button:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+.rightCard button p {
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--dark-cyan);
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 35rem;
+    height: 25rem;
+  }
+
+  .leftCard img {
+    width: 17.5rem;
+    height: 25rem;
+  }
+
+  .rightCard {
+    margin: .8rem;
+    padding: .8rem;
+  }
+
+  .rightCard h2 {
+    font-size: .7rem;
+  }
+  
+  .rightCard h1 {
+    font-size: 1.7rem;
+  }
+  
+  .rightCard p {
+    font-size: .8rem;
+    line-height: 1.3rem;
+  }
+  
+  .rightCard .price {
+    font-size: 1.5rem;
+  }
+  
+  .rightCard button p {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+
+  footer {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .card {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  .leftCard img {
+    width: 15rem;
+    height: 20rem;
+  }
+
+  .rightCard {
+    margin: .7rem;
+    padding: .7rem;
+  }
+
+  .rightCard h2 {
+    font-size: .6rem;
+  }
+  
+  .rightCard h1 {
+    font-size: 1.4rem;
+  }
+  
+  .rightCard p {
+    font-size: .7rem;
+    line-height: 1.3rem;
+  }
+  
+  .rightCard .price {
+    font-size: 1.2rem;
+  }
+
+  .rightCard button {
+    padding: .7rem;
+    border-radius: .6rem;
+  }
+  
+  .rightCard button p {
+    font-size: .6rem;
+    font-weight: 600;
+  }
+
+  footer {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    height: 35rem;
+    margin: 1rem;
+  }
+
+  .leftCard img {
+    display: none;
+  }
+
+  .mobile img {
+    display: flex;
+    width: 19rem;
+    border-top-right-radius: .8rem;
+    border-top-left-radius: .8rem;
+  }
+
+  .rightCard {
+    width: 100%;
+    height: 100%;
+    padding-right: 2rem;
+  }
+
+  .rightCard h2 {
+    font-size: .7rem;
+    font-weight: 400;
+  }
+  
+  .rightCard h1 {
+    font-size: 1.8rem;
+  }
+  
+  .rightCard p {
+    font-size: .8rem;
+    line-height: 1.3rem;
+  }
+  
+  .rightCard .price {
+    font-size: 1.7rem;
+  }
+
+  .rightCard button {
+    padding: .7rem;
+    border-radius: .6rem;
+  }
+  
+  .rightCard button p {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+
+  footer {
+    font-size: .75rem;
+  }
+}
+
+@media (max-width: 330px){
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    height: 35rem;
+    margin: 1rem;
+  }
+
+  .leftCard img {
+    display: none;
+  }
+
+  .mobile img {
+    display: flex;
+    width: 16rem;
+    border-top-right-radius: .8rem;
+    border-top-left-radius: .8rem;
+  }
+
+  .rightCard {
+    width: 100%;
+    height: 100%;
+    padding-right: 2rem;
+  }
+
+  .rightCard h2 {
+    font-size: .65rem;
+    font-weight: 400;
+  }
+  
+  .rightCard h1 {
+    font-size: 1.6rem;
+  }
+  
+  .rightCard p {
+    font-size: .7rem;
+    line-height: 1.3rem;
+  }
+  
+  .rightCard .price {
+    font-size: 1.6rem;
+  }
+
+  .rightCard button {
+    padding: .7rem;
+    border-radius: .6rem;
+  }
+  
+  .rightCard button p {
+    font-size: .7rem;
+    font-weight: 600;
+  }
+
+  footer {
+    font-size: .6rem;
+  }
+}
