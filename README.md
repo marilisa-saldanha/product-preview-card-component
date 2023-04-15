@@ -4,8 +4,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/product-preview-card-component-using-html-5-css-and-flexbox-298CwIgTUW)
+- [Live Site URL](https://marilisa-saldanha.github.io/product-preview-card-component/)
 
 ### Built with
 
