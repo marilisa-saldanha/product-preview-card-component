@@ -12,7 +12,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - HTML5
 - CSS
 - Flexbox
-- Mobile-first workflow
 
 ## Author
 
